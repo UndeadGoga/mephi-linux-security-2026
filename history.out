@@ -1,0 +1,142 @@
++ выполнить.sh:18: trap $'rc=$?; set +x; echo "\320\236\320\250\320\230\320\221\320\232\320\220: \320\272\320\276\320\264 $rc, \321\201\321\202\321\200\320\276\320\272\320\260 $LINENO. \320\240\320\260\320\261\320\276\321\202\320\260 \320\275\320\265 \320\267\320\260\320\262\320\265\321\200\321\210\320\265\320\275\320\260." | tee "$OUT/STATUS.txt"; exit "$rc"' ERR
++ выполнить.sh:19: printf $'\320\221\321\203\321\205\320\263\320\260\320\273\321\202\320\265\321\200\321\201\320\272\320\270\320\271 \320\272\320\276\320\264: 372185\\n'
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v useradd
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v groupadd
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v usermod
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v chage
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v runuser
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v setcap
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v getcap
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v visudo
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v sudo
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v timedatectl
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v findmnt
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v find
++ выполнить.sh:20: for cmd in useradd groupadd usermod chage runuser setcap getcap visudo sudo timedatectl findmnt find ps
++ выполнить.sh:21: command -v ps
++ выполнить.sh:24: getent passwd user1
+++ выполнить.sh:25: id -u user1
++ выполнить.sh:25: [[ 1234 == 1234 ]]
++ выполнить.sh:31: getent group students
++ выполнить.sh:32: usermod -aG students user1
++ выполнить.sh:33: chage -M 90 user1
+++ выполнить.sh:34: getent passwd user1
+++ выполнить.sh:34: cut -d: -f6
++ выполнить.sh:34: USER_HOME=/home/user1
++ выполнить.sh:35: [[ /home/user1 == /home/user1 ]]
++ выполнить.sh:36: id user1
++ выполнить.sh:36: chage -l user1
++ выполнить.sh:38: LAB=/home/user1/praktika-372185
++ выполнить.sh:39: [[ -e /home/user1/praktika-372185 ]]
++ выполнить.sh:40: [[ -d /home/user1/praktika-372185 ]]
++ выполнить.sh:40: [[ ! -L /home/user1/praktika-372185 ]]
+++ выполнить.sh:40: stat -c %u /home/user1/praktika-372185
++ выполнить.sh:40: [[ 0 == 0 ]]
++ выполнить.sh:41: for file in root-only.txt cat-suid chown-cap owner-test.txt monitor.fifo
++ выполнить.sh:42: [[ ! -L /home/user1/praktika-372185/root-only.txt ]]
++ выполнить.sh:43: [[ -f /home/user1/praktika-372185/root-only.txt ]]
+++ выполнить.sh:44: stat -c %h /home/user1/praktika-372185/root-only.txt
++ выполнить.sh:44: [[ 1 == 1 ]]
++ выполнить.sh:41: for file in root-only.txt cat-suid chown-cap owner-test.txt monitor.fifo
++ выполнить.sh:42: [[ ! -L /home/user1/praktika-372185/cat-suid ]]
++ выполнить.sh:43: [[ -f /home/user1/praktika-372185/cat-suid ]]
+++ выполнить.sh:44: stat -c %h /home/user1/praktika-372185/cat-suid
++ выполнить.sh:44: [[ 1 == 1 ]]
++ выполнить.sh:41: for file in root-only.txt cat-suid chown-cap owner-test.txt monitor.fifo
++ выполнить.sh:42: [[ ! -L /home/user1/praktika-372185/chown-cap ]]
++ выполнить.sh:43: [[ -f /home/user1/praktika-372185/chown-cap ]]
+++ выполнить.sh:44: stat -c %h /home/user1/praktika-372185/chown-cap
++ выполнить.sh:44: [[ 1 == 1 ]]
++ выполнить.sh:41: for file in root-only.txt cat-suid chown-cap owner-test.txt monitor.fifo
++ выполнить.sh:42: [[ ! -L /home/user1/praktika-372185/owner-test.txt ]]
++ выполнить.sh:43: [[ -f /home/user1/praktika-372185/owner-test.txt ]]
+++ выполнить.sh:44: stat -c %h /home/user1/praktika-372185/owner-test.txt
++ выполнить.sh:44: [[ 1 == 1 ]]
++ выполнить.sh:41: for file in root-only.txt cat-suid chown-cap owner-test.txt monitor.fifo
++ выполнить.sh:42: [[ ! -L /home/user1/praktika-372185/monitor.fifo ]]
++ выполнить.sh:43: [[ -f /home/user1/praktika-372185/monitor.fifo ]]
++ выполнить.sh:47: [[ -p /home/user1/praktika-372185/monitor.fifo ]]
+++ выполнить.sh:49: id -gn user1
++ выполнить.sh:49: GROUP=user1
++ выполнить.sh:50: install -d -o root -g user1 -m 0750 /home/user1/praktika-372185
++ выполнить.sh:51: printf $'\320\237\321\200\320\260\320\272\321\202\320\270\320\272\320\260 372185: \321\207\321\202\320\265\320\275\320\270\320\265 \321\204\320\260\320\271\320\273\320\260 root \321\203\321\201\320\277\320\265\321\210\320\275\320\276.\\n'
++ выполнить.sh:52: chmod 0600 /home/user1/praktika-372185/root-only.txt
++ выполнить.sh:53: install -o root -g user1 -m 0750 /usr/bin/cat /home/user1/praktika-372185/cat-suid
++ выполнить.sh:55: runuser -u user1 -- /usr/bin/cat /home/user1/praktika-372185/root-only.txt
++ выполнить.sh:58: chmod 4750 /home/user1/praktika-372185/cat-suid
++ выполнить.sh:59: runuser -u user1 -- /home/user1/praktika-372185/cat-suid /home/user1/praktika-372185/root-only.txt
++ выполнить.sh:61: mkfifo -m 600 /home/user1/praktika-372185/monitor.fifo
++ выполнить.sh:63: MONITOR=17888
++ выполнить.sh:64: FOUND=0
++ выполнить.sh:62: runuser -u user1 -- /home/user1/praktika-372185/cat-suid /home/user1/praktika-372185/monitor.fifo
++ выполнить.sh:65: for attempt in {1..30}
++ выполнить.sh:66: ps -eo pid,ruid,euid,ruser,euser,args
++ выполнить.sh:67: awk '$2 == 1234 && $3 == 0 && /cat-suid/ { found=1 } END { exit !found }' $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/processes-all.out'
++ выполнить.sh:68: sleep 0.1
++ выполнить.sh:65: for attempt in {1..30}
++ выполнить.sh:66: ps -eo pid,ruid,euid,ruser,euser,args
++ выполнить.sh:67: awk '$2 == 1234 && $3 == 0 && /cat-suid/ { found=1 } END { exit !found }' $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/processes-all.out'
++ выполнить.sh:67: FOUND=1
++ выполнить.sh:67: break
++ выполнить.sh:70: awk 'NR == 1 || ($2 != 0 && $3 == 0)' $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/processes-all.out'
++ выполнить.sh:72: exec
++ выполнить.sh:73: printf '372185\n'
++ выполнить.sh:74: exec
++ выполнить.sh:75: wait 17888
++ выполнить.sh:76: rm -- /home/user1/praktika-372185/monitor.fifo
++ выполнить.sh:77: [[ 1 == 1 ]]
++ выполнить.sh:78: [[ -f /home/user1/praktika-372185/chown-cap ]]
++ выполнить.sh:78: rm -- /home/user1/praktika-372185/chown-cap
++ выполнить.sh:79: install -o root -g user1 -m 0750 /usr/bin/chown /home/user1/praktika-372185/chown-cap
++ выполнить.sh:80: touch /home/user1/praktika-372185/owner-test.txt
++ выполнить.sh:81: chown user1:user1 /home/user1/praktika-372185/owner-test.txt
++ выполнить.sh:82: runuser -u user1 -- /usr/bin/chown root /home/user1/praktika-372185/owner-test.txt
++ выполнить.sh:85: setcap cap_chown=ep /home/user1/praktika-372185/chown-cap
++ выполнить.sh:86: runuser -u user1 -- /home/user1/praktika-372185/chown-cap root /home/user1/praktika-372185/owner-test.txt
++ выполнить.sh:87: stat /home/user1/praktika-372185/owner-test.txt
+++ выполнить.sh:88: stat -c %u /home/user1/praktika-372185/owner-test.txt
++ выполнить.sh:88: [[ 0 == 0 ]]
+++ выполнить.sh:90: command -v timedatectl
++ выполнить.sh:90: TIMECTL=/usr/sbin/timedatectl
++ выполнить.sh:91: SUDOFILE=/etc/sudoers.d/praktika-372185
++ выполнить.sh:92: [[ ! -L /etc/sudoers.d/praktika-372185 ]]
+++ выполнить.sh:93: mktemp
++ выполнить.sh:93: TMP_SUDO=/tmp/tmp.bYoV6qwFgv
++ выполнить.sh:94: printf 'user1 ALL=(root) NOPASSWD: %s set-time *\n' /usr/sbin/timedatectl
++ выполнить.sh:95: visudo -cf /tmp/tmp.bYoV6qwFgv
++ выполнить.sh:96: install -o root -g root -m 0440 /tmp/tmp.bYoV6qwFgv /etc/sudoers.d/praktika-372185
++ выполнить.sh:97: rm /tmp/tmp.bYoV6qwFgv
++ выполнить.sh:98: visudo -c
++ выполнить.sh:99: sudo -l -U user1
++ выполнить.sh:100: sudo -l -U user1 -- /usr/sbin/timedatectl set-time '2026-09-19 12:00:00'
++ выполнить.sh:102: FIND_STATUS=0
++ выполнить.sh:103: find / -type f -perm -4000 -print
++ выполнить.sh:103: FIND_STATUS=1
++ выполнить.sh:104: printf '%s\n' 1
++ выполнить.sh:105: stat /home/user1
++ выполнить.sh:105: stat /home/user1/praktika-372185/cat-suid
++ выполнить.sh:105: stat /home/user1/praktika-372185/chown-cap
++ выполнить.sh:106: getcap /home/user1/praktika-372185/chown-cap
++ выполнить.sh:107: findmnt -T /home/user1/praktika-372185
++ выполнить.sh:107: ls -ldZ /home/user1/praktika-372185
++ выполнить.sh:107: ls -lZ /home/user1/praktika-372185
++ выполнить.sh:109: install -m 0600 /etc/passwd $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/etc_passwd'
++ выполнить.sh:110: install -m 0600 /etc/group $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/etc_group'
++ выполнить.sh:111: install -m 0600 /etc/shadow $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/etc_shadow'
++ выполнить.sh:112: install -m 0600 /etc/sudoers $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/etc_sudoers'
++ выполнить.sh:114: install -m 0600 /etc/sudoers.d/praktika-372185 $'/home/vitaliy/\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273/\320\277\321\200\320\260\320\272\321\202\320\270\320\272\320\260/\321\200\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202\321\213-20260919-115416/etc_sudoers.d_praktika-372185'
++ выполнить.sh:115: cat
++ выполнить.sh:141: cat
++ выполнить.sh:153: set +x

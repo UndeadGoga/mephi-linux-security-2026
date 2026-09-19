@@ -1,0 +1,27 @@
+  File: /home/user1
+  Size: 108       	Blocks: 0          IO Block: 4096   directory
+Device: 0,42	Inode: 147980      Links: 1
+Access: (0700/drwx------)  Uid: ( 1234/   user1)   Gid: ( 1234/   user1)
+Context: unconfined_u:object_r:user_home_dir_t:s0
+Access: 2026-09-19 11:42:16.502650210 +0300
+Modify: 2026-09-19 11:42:14.597630010 +0300
+Change: 2026-09-19 11:42:14.597630010 +0300
+ Birth: 2026-09-19 11:42:14.523629225 +0300
+  File: /home/user1/praktika-372185/cat-suid
+  Size: 40696     	Blocks: 80         IO Block: 4096   regular file
+Device: 0,42	Inode: 179099      Links: 1
+Access: (4750/-rwsr-x---)  Uid: (    0/    root)   Gid: ( 1234/   user1)
+Context: unconfined_u:object_r:user_home_t:s0
+Access: 2026-09-19 11:54:16.348770814 +0300
+Modify: 2026-09-19 11:54:16.300771144 +0300
+Change: 2026-09-19 11:54:16.330770938 +0300
+ Birth: 2026-09-19 11:54:16.299771151 +0300
+  File: /home/user1/praktika-372185/chown-cap
+  Size: 69984     	Blocks: 144        IO Block: 4096   regular file
+Device: 0,42	Inode: 179107      Links: 1
+Access: (0750/-rwxr-x---)  Uid: (    0/    root)   Gid: ( 1234/   user1)
+Context: unconfined_u:object_r:user_home_t:s0
+Access: 2026-09-19 11:54:16.613768992 +0300
+Modify: 2026-09-19 11:54:16.560769357 +0300
+Change: 2026-09-19 11:54:16.594769123 +0300
+ Birth: 2026-09-19 11:54:16.560769357 +0300
